@@ -39,7 +39,7 @@ jobs:
           name: "Run Build step"
           command: dotnet.exe build --configuration Release
 workflows:
-  test_and_build
+  test_and_build:
     jobs:
       - test
       - build:
