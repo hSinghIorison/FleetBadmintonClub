@@ -23,9 +23,9 @@ jobs:
       - run:
           name: "Run application tests"
           command: dotnet.exe test -v -n --results-directory:test_coverage --collect:"Code Coverage"
-      - run:
-          name: "Print Working Directory"
-          command: pwd
+      #- run:
+      #    name: "Print Working Directory"
+      #    command: pwd
       - run:
           store_artifacts:
             path: C:\Users\circleci\project\test_coverage
